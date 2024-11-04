@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeFragment">
+
+    <!-- Welcome Fragment -->
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.triptuner.ui.WelcomeFragment"
+        android:label="Welcome"
+        tools:layout="@layout/fragment_welcome">
+        <action
+            android:id="@+id/action_welcomeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <!-- Login Fragment -->
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.triptuner.ui.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+
+    <!-- Sign Up Fragment -->
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.triptuner.ui.SignUpFragment"
+        android:label="Sign Up"
+        tools:layout="@layout/fragment_sign_up">
+        <action
+            android:id="@+id/action_signUpFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <!-- Home Fragment -->
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.triptuner.ui.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_createItineraryFragment"
+            app:destination="@id/createItineraryFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_viewItineraryFragment"
+            app:destination="@id/viewItineraryFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_userProfileFragment"
+            app:destination="@id/userProfileFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_logoutFragment"
+            app:destination="@id/logoutFragment" />
+        <!-- Action to navigate to the Budget Planner -->
+        <action
+            android:id="@+id/action_homeFragment_to_navigation_budget_planner"
+            app:destination="@id/navigation_budget_planner" />
+    </fragment>
+
+    <!-- Itineraries Fragment -->
+    <fragment
+        android:id="@+id/itinerariesFragment"
+        android:name="com.example.triptuner.ui.ItinerariesFragment"
+        android:label="Itineraries"
+        tools:layout="@layout/fragment_itineraries">
+        <action
+            android:id="@+id/action_itinerariesFragment_to_createItineraryFragment"
+            app:destination="@id/createItineraryFragment" />
+        <action
+            android:id="@+id/action_itinerariesFragment_to_viewItineraryFragment"
+            app:destination="@id/viewItineraryFragment" />
+    </fragment>
+
+    <!-- Create Itinerary Fragment -->
+    <fragment
+        android:id="@+id/createItineraryFragment"
+        android:name="com.example.triptuner.ui.CreateItineraryFragment"
+        android:label="Create Itinerary"
+        tools:layout="@layout/fragment_create_itinerary">
+        <action
+            android:id="@+id/action_createItineraryFragment_to_viewItineraryFragment"
+            app:destination="@id/viewItineraryFragment" />
+    </fragment>
+
+    <!-- View Itinerary Fragment -->
+    <fragment
+        android:id="@+id/viewItineraryFragment"
+        android:name="com.example.triptuner.ui.ViewItineraryFragment"
+        android:label="View Itinerary"
+        tools:layout="@layout/fragment_view_itinerary">
+        <action
+            android:id="@+id/action_viewItineraryFragment_to_editItineraryFragment"
+            app:destination="@id/editItineraryFragment">
+            <argument
+                android:name="itineraryId"
+                app:argType="string" />
+        </action>
+        <action
+            android:id="@+id/action_viewItineraryFragment_to_createItineraryFragment"
+            app:destination="@id/createItineraryFragment" />
+        <!-- Action to navigate to the Budget Planner -->
+        <action
+            android:id="@+id/action_homeFragment_to_budgetPlannerFragment"
+            app:destination="@id/navigation_budget_planner" />
+    </fragment>
+
+    <!-- Edit Itinerary Fragment -->
+    <fragment
+        android:id="@+id/editItineraryFragment"
+        android:name="com.example.triptuner.ui.EditItineraryFragment"
+        android:label="Edit Itinerary"
+        tools:layout="@layout/fragment_edit_itinerary">
+        <argument
+            android:name="itineraryId"
+            app:argType="string" />
+    </fragment>
+
+    <!-- User Profile Fragment -->
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="com.example.triptuner.ui.UserProfileFragment"
+        android:label="User Profile"
+        tools:layout="@layout/fragment_user_profile">
+        <action
+            android:id="@+id/action_userProfileFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+        <action
+            android:id="@+id/action_userProfileFragment_to_changePasswordFragment"
+            app:destination="@id/changePasswordFragment" />
+        <action
+            android:id="@+id/action_userProfileFragment_to_viewItineraryFragment"
+            app:destination="@id/viewItineraryFragment" />
+        <action
+            android:id="@+id/action_userProfileFragment_to_logoutFragment"
+            app:destination="@id/logoutFragment" />
+    </fragment>
+
+    <!-- Edit Profile Fragment -->
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.example.triptuner.ui.EditProfileFragment"
+        android:label="Edit Profile"
+        tools:layout="@layout/fragment_edit_profile">
+        <action
+            android:id="@+id/action_editProfileFragment_to_changePasswordFragment"
+            app:destination="@id/changePasswordFragment" />
+    </fragment>
+
+    <!-- Budget Planner Fragment -->
+    <fragment
+        android:id="@+id/navigation_budget_planner"
+        android:name="com.example.triptuner.ui.BudgetPlannerFragment"
+        android:label="Expenses"
+        tools:layout="@layout/fragment_budget_planner" />
+
+    <!-- Change Password Fragment -->
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="com.example.triptuner.ui.ChangePasswordFragment"
+        android:label="Change Password"
+        tools:layout="@layout/fragment_change_password" />
+
+    <!-- Logout Fragment -->
+    <fragment
+        android:id="@+id/logoutFragment"
+        android:name="com.example.triptuner.ui.LogoutFragment"
+        android:label="Logout"
+        tools:layout="@layout/fragment_logout">
+        <action
+            android:id="@+id/action_logoutFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+</navigation>

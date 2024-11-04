@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Apply this to change default text size for all TextViews in the app -->
+        <item name="android:textAppearance">@style/GlobalTextStyle</item>
+    </style>
+
+    <!-- Global text appearance style -->
+    <style name="GlobalTextStyle" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">25sp</item> <!-- Set the font size -->
+        <item name="android:textColor">?attr/colorOnSurface</item> <!-- Optional: Text color -->
+    </style>
+
+    <!-- Custom style for Bottom Navigation item text -->
+    <style name="BottomNavTextStyle" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">20sp</item> <!-- Adjust the text size as needed -->
+        <item name="android:textColor">?attr/colorOnSurface</item> <!-- Text color -->
+    </style>
+</resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/backgroundColor"
+    android:fitsSystemWindows="true"
+    android:paddingBottom="80dp"
+    tools:context=".ui.EditItineraryFragment">
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:padding="16dp">
+
+<!-- Heading -->
+<TextView
+    android:id="@+id/tvEditItinerary"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Edit Itinerary"
+    android:textSize="28sp"
+    android:textStyle="bold"
+    android:textColor="@color/primaryDarkColor"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginBottom="24dp" />
+
+<!-- Destination Input -->
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/til_destination_edit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_destination_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_destination"
+        android:inputType="text" />
+</com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_budget_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_budget_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Budget"
+            android:textSize="16sp"
+            android:inputType="number"
+            android:digits="0123456789"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+<!-- Companions Dropdown -->
+<Spinner
+    android:id="@+id/sp_companions_edit"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:layout_marginTop="8dp"
+    android:spinnerMode="dropdown" />
+
+<!-- Special Notes Input -->
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/til_special_notes_edit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_special_notes_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_special_notes"
+        android:inputType="textMultiLine" />
+</com.google.android.material.textfield.TextInputLayout>
+
+<!-- Generated Information Input -->
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/til_generated_information_edit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_generated_information_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Edit Generated Information"
+        android:inputType="textMultiLine" />
+</com.google.android.material.textfield.TextInputLayout>
+
+<!-- Save Button -->
+<com.google.android.material.button.MaterialButton
+    android:id="@+id/btn_save_itinerary"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/save_changes"
+    app:cornerRadius="8dp"
+    android:textSize="18sp"
+    android:layout_marginTop="24dp"
+    android:backgroundTint="@color/primaryColor"
+    android:textColor="@color/white" />
+
+</LinearLayout>
+    </ScrollView>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/backgroundColor"
+    tools:context=".ui.CreateItineraryFragment">
+
+    <!-- Heading for Create Itinerary -->
+    <TextView
+        android:id="@+id/tvCreateItinerary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Itinerary"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/primaryDarkColor"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Destination Label -->
+    <TextView
+        android:id="@+id/tvDestinationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Destination"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/textSecondaryColor"
+        app:layout_constraintTop_toBottomOf="@id/tvCreateItinerary"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Destination Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_destination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvDestinationLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_destination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Destination"
+            android:textSize="16sp"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Budget Label -->
+    <TextView
+        android:id="@+id/tvBudgetLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Budget"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/textSecondaryColor"
+        app:layout_constraintTop_toBottomOf="@id/til_destination"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Budget Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_budget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvBudgetLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_budget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Budget"
+            android:textSize="16sp"
+            android:inputType="number"
+            android:digits="0123456789"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!-- Companions Label -->
+    <TextView
+        android:id="@+id/tvCompanionsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Companions"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/textSecondaryColor"
+        app:layout_constraintTop_toBottomOf="@id/til_budget"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Companions Dropdown -->
+    <Spinner
+        android:id="@+id/sp_companions"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:layout_constraintTop_toBottomOf="@id/tvCompanionsLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:spinnerMode="dropdown" />
+
+    <!-- Special Notes Label -->
+    <TextView
+        android:id="@+id/tvSpecialNotesLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Special Notes"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/textSecondaryColor"
+        app:layout_constraintTop_toBottomOf="@id/sp_companions"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Special Notes Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_special_notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvSpecialNotesLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_special_notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Any Special Requirements or Notes"
+            android:textSize="16sp"
+            android:inputType="textMultiLine" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Generate Itinerary Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_generate_itinerary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate Itinerary"
+        android:layout_marginTop="24dp"
+        android:textSize="18sp"
+        app:cornerRadius="8dp"
+        android:backgroundTint="@color/primaryColor"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/til_special_notes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

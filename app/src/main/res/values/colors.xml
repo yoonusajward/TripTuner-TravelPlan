@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary and Secondary Colors -->
+    <color name="primaryColor">#0288D1</color> <!-- Light Blue for primary elements like buttons, headers -->
+    <color name="primaryDarkColor">#0277BD</color> <!-- Darker Blue for status bars, app bars -->
+    <color name="secondaryColor">#FFA726</color> <!-- Light Orange for accent buttons, highlighted text -->
+    <color name="secondaryDarkColor">#FB8C00</color> <!-- Darker Orange for active or selected states -->
+
+    <!-- Accent Colors for Highlights -->
+    <color name="accentColor">#26C6DA</color> <!-- Aqua Blue for interactive elements like links, icons -->
+    <color name="accentDarkColor">#00ACC1</color> <!-- Dark Aqua for pressed or focused states of accents -->
+
+    <!-- Neutral Background Colors -->
+    <color name="backgroundColor">#F5F5F5</color> <!-- Light Grey for general background to create contrast -->
+    <color name="surfaceColor">#FFFFFF</color> <!-- White for cards, modal surfaces, containers -->
+
+    <!-- Text Colors -->
+    <color name="textPrimaryColor">#212121</color> <!-- Dark Grey for main body text, headlines -->
+    <color name="textSecondaryColor">#757575</color> <!-- Medium Grey for secondary text, subtitles -->
+
+    <!-- Success, Error, and Info Colors -->
+    <color name="successColor">#4CAF50</color> <!-- Green for success messages, positive indicators -->
+    <color name="errorColor">#F44336</color> <!-- Red for error messages, critical alerts -->
+    <color name="infoColor">#03A9F4</color> <!-- Light Blue for informational banners, tips -->
+
+    <!-- Shades for Borders, Dividers, and Icons -->
+    <color name="black">#000000</color> <!-- Black for important text or icons -->
+    <color name="white">#FFFFFF</color> <!-- White for text/icons on dark backgrounds -->
+    <color name="lightGrey">#E0E0E0</color> <!-- Light Grey for dividers, subtle lines -->
+    <color name="darkGrey">#424242</color> <!-- Dark Grey for text/icons in less important sections -->
+
+</resources>

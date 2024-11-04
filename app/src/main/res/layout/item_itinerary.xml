@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="6dp"
+    app:cardBackgroundColor="@color/white"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <!-- Destination -->
+        <TextView
+            android:id="@+id/tvDestination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/destination_label"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/primaryDarkColor"
+            android:layout_marginBottom="4dp"/>
+
+        <!-- Budget -->
+        <TextView
+            android:id="@+id/tvBudget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/budget_label"
+            android:textSize="16sp"
+            android:textColor="@color/textSecondaryColor"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"/>
+
+        <!-- Companions -->
+        <TextView
+            android:id="@+id/tvCompanions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/companions_label"
+            android:textSize="16sp"
+            android:textColor="@color/textSecondaryColor"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tvSpecialNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Special Notes: "
+            android:textSize="16sp"
+            android:textColor="@color/textSecondaryColor"
+            app:layout_constraintTop_toBottomOf="@+id/tvCompanions"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+        <!-- Generated Information -->
+        <TextView
+            android:id="@+id/tvGeneratedInformation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/generated_information_label"
+            android:textSize="16sp"
+            android:textColor="@color/textSecondaryColor"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- "Edited" Label -->
+        <TextView
+            android:id="@+id/tvEdited"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edited"
+            android:textSize="12sp"
+            android:textColor="@color/secondaryColor"
+            android:layout_gravity="end"
+            android:visibility="gone" />
+
+        <!-- Buttons for Edit and Delete -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="8dp">
+
+            <!-- Edit Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEditItinerary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edit_itinerary_label"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                app:cornerRadius="8dp"
+                android:layout_marginEnd="8dp"
+                app:icon="@drawable/ic_edit"
+                app:iconTint="@color/white"
+                app:iconGravity="textStart"/>
+
+            <!-- Delete Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDeleteItinerary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delete_itinerary"
+                android:textSize="14sp"
+                app:cornerRadius="8dp"
+                android:textColor="@android:color/white"
+                app:backgroundTint="@color/errorColor"
+                app:icon="@drawable/ic_delete"
+                app:iconTint="@android:color/white"
+                app:iconGravity="textStart"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

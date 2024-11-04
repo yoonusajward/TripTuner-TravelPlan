@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="budget_options">
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+    <string-array name="companion_options">
+        <item>Solo</item>
+        <item>Friends</item>
+        <item>Family</item>
+        <item>Partner</item>
+    </string-array>
+</resources>

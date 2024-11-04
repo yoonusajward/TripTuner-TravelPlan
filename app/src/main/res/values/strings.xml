@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">TripTuner</string>
+
+    <!-- Itineraries -->
+    <string name="itineraries">Itineraries</string>
+    <string name="create_itinerary">Create Itinerary</string>
+    <string name="view_itineraries">View Itineraries</string>
+    <string name="edit_destination">Edit Destination</string>
+    <string name="edit_special_notes">Edit Special Notes</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="destination_label">Destination</string>
+    <string name="budget_label">Budget</string>
+    <string name="companions_label">Companions</string>
+    <string name="generated_information_label">Generated Information</string>
+    <string name="edit_itinerary_label">Edit</string>
+    <string name="saved_itineraries">Saved Itineraries</string>
+    <string name="create_new_itinerary">Create New Itinerary</string>
+    <string name="delete_itinerary_label">Delete Itinerary</string>
+
+    <!-- Authentication -->
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="change_password">Change Password</string>
+    <string name="user_profile">User Profile</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_save_profile">Save Profile</string>
+    <string name="btn_create_itinerary">Create Itinerary</string>
+    <string name="delete_itinerary">Delete</string>
+    <string name="welcome_to_home">Dashboard</string>
+    <string name="edit_name">Edit Name</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="already_have_an_account">Already have an account? Log in</string>
+
+    <!-- Welcome Screen -->
+    <string name="welcome_image_description">Logo of TripTuner application</string>
+    <string name="welcome_message">Turn Every Trip into an Adventure!</string>
+    <string name="get_started">Get Started</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account? Sign up</string>
+    <string name="user_icon">User Icon</string>
+
+    <!-- Greetings and Profile -->
+    <string name="greeting_text">Hello, %1$s</string>
+    <string name="name">Name</string>
+    <string name="logout_message">You are logged out. See you soon!</string>
+    <string name="btn_logout">Logout</string>
+    <string name="logout_icon_description">Sad face icon indicating logout</string>
+
+    <!-- Itinerary Actions -->
+    <string name="itinerary_edited">Edited</string>
+    <string name="edit_generated_information">Edit Generated Information</string>
+    <string name="error_fetching_data">Error fetching data. Please try again.</string>
+    <string name="fetching_itinerary">Fetching Itinerary…</string>
+    <string name="saving_itinerary">Saving Itinerary…</string>
+    <string name="error_saving_itinerary">Error saving itinerary: %1$s</string>
+    <string name="itinerary_saved_successfully">Itinerary saved successfully!</string>
+    <string name="edit_itinerary">Edit Itinerary</string>
+    <string name="error_loading_profile">Failed to load profile: %1$s</string>
+    <string name="profile_not_found">User profile not found.</string>
+
+    <!-- Logout -->
+    <string name="logout_sad_face">Sad face icon for logout screen</string>
+
+    <!-- Budget Planner -->
+    <string name="budget_planner">Budget Planner</string>
+    <string name="expense_amount">LKR %1$.2f</string>
+    <string name="failed_to_load_expenses">Failed to load expenses</string>
+    <string name="total_expenses">Total Expenses: LKR %1$.2f</string>
+    <string name="total_expenses_default">Total Expenses: LKR 0.00</string>
+    <string name="fill_all_fields">Please fill all fields</string>
+    <string name="invalid_amount">Please enter a valid amount</string>
+    <string name="expense_added_successfully">Expense added successfully!</string>
+    <string name="failed_to_add_expense">Failed to add expense</string>
+    <string name="enter_budget">Enter a budget</string>
+    <string name="budget_exceeded">Your total expenses of LKR %1$.2f exceed your budget of LKR %2$.2f</string>
+    <string name="invalid_budget">Please enter a valid budget</string>
+    <string name="delete_expense">remove expense item</string>
+</resources>

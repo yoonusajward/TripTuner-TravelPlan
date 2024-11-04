@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:paddingBottom="16dp"
+    android:clipToPadding="false">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:padding="16dp"
+android:background="@color/white">
+
+<!-- Logo at the top -->
+<ImageView
+    android:id="@+id/welcomeImage"
+    android:layout_width="250dp"
+    android:layout_height="150dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="8dp"
+    android:contentDescription="@string/welcome_image_description"
+    android:src="@drawable/ic_welcome_logo"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginBottom="16dp" />
+
+<!-- Expense Name Field -->
+<EditText
+    android:id="@+id/etExpenseName"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:hint="Expense name"
+    android:padding="12dp"
+    android:background="@drawable/rounded_edittext_background"
+    android:textColor="@android:color/black"
+    android:textSize="16sp"
+    app:layout_constraintTop_toBottomOf="@id/welcomeImage"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent" />
+
+<!-- Amount Field -->
+<EditText
+    android:id="@+id/etExpenseAmount"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:hint="Add amount"
+    android:padding="12dp"
+    android:inputType="numberDecimal"
+    android:background="@drawable/rounded_edittext_background"
+    android:textColor="@android:color/black"
+    android:textSize="16sp"
+    app:layout_constraintTop_toBottomOf="@id/etExpenseName"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="16dp" />
+
+<!-- Add Expense Button -->
+<Button
+    android:id="@+id/btnAddExpense"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Add Expense"
+    android:textColor="@android:color/white"
+    android:backgroundTint="@color/primaryColor"
+    android:paddingLeft="32dp"
+    android:paddingRight="32dp"
+    android:textSize="16sp"
+    android:elevation="4dp"
+    app:layout_constraintTop_toBottomOf="@id/etExpenseAmount"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="24dp" />
+
+<!-- Total Expenses Text -->
+<TextView
+    android:id="@+id/tvTotalExpenses"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="@string/total_expenses_default"
+    android:textColor="@android:color/black"
+    android:textSize="16sp"
+    app:layout_constraintTop_toBottomOf="@id/btnAddExpense"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="16dp" />
+
+<!-- Budget Input Field -->
+<EditText
+    android:id="@+id/etBudget"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:hint="@string/enter_budget"
+    android:padding="12dp"
+    android:inputType="numberDecimal"
+    android:background="@drawable/rounded_edittext_background"
+    android:textColor="@android:color/black"
+    android:textSize="16sp"
+    app:layout_constraintTop_toBottomOf="@id/tvTotalExpenses"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="16dp" />
+
+<!-- Set Budget Button -->
+<Button
+    android:id="@+id/btnSetBudget"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Set Budget"
+    android:textColor="@android:color/white"
+    android:backgroundTint="@color/primaryColor"
+    android:paddingLeft="32dp"
+    android:paddingRight="32dp"
+    android:textSize="16sp"
+    android:elevation="4dp"
+    app:layout_constraintTop_toBottomOf="@id/etBudget"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="16dp" />
+
+<!-- Budget Exceeded Warning -->
+<TextView
+    android:id="@+id/tvBudgetWarning"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:textColor="@android:color/holo_red_dark"
+    android:textSize="16sp"
+    android:visibility="gone"
+    app:layout_constraintTop_toBottomOf="@id/btnSetBudget"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="16dp" />
+
+    <!-- RecyclerView for Expense List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+    android:paddingBottom="80dp"
+    android:layout_marginTop="16dp"
+    app:layout_constraintTop_toBottomOf="@id/tvBudgetWarning"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>

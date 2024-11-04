@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/welcomeImage"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="1dp"
+        android:contentDescription="@string/welcome_image_description"
+        android:src="@drawable/ic_welcome_logo" />
+
+    <TextView
+        android:id="@+id/tvHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_to_home"
+        android:layout_gravity="center"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/primaryDarkColor" />
+
+    <Button
+        android:id="@+id/btnCreateItinerary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/create_itinerary"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/primaryColor" />
+
+    <Button
+        android:id="@+id/btnViewItineraries"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/view_itineraries"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/primaryColor" />
+
+    <Button
+        android:id="@+id/btnBudgetPlanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/budget_planner"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/primaryColor" />
+
+    <Button
+        android:id="@+id/btnUserProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/user_profile"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/primaryColor" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/logout"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/primaryColor" />
+
+</LinearLayout>
