@@ -1,7 +1,0 @@
-api_url = "https://api-inference.huggingface.co/models/yoonusajward01/triptuner"
-
-	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
-
-
-Token name: tripmodel
-Token key : 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
