@@ -1,9 +1,9 @@
 
-TripTuner - Final Year Project
+TripTuner - Travel Planning Application Using GPT Model
 
 TripTuner is a Kotlin-based Android application designed to help users generate personalised travel itineraries. The app allows users to input a destination and, with the help of a GPT model, generates an itinerary for the location. The app also allows users to manually add budget amount, companions, and other preferences, and saves the final itinerary for future reference.
 
-This project has been developed by Mohammed Ajward Yoonus as part of my final year degree and is submitted via a DVD.
+This project has been developed by Mohammed Ajward Yoonus.
 
 Tools and Applications Required
 -------------------------------
@@ -70,4 +70,4 @@ Common Issues and Error Handling
 
 If you have any questions or face issues while running the project, feel free to contact me.
 
-Contact: [cb010640@students.apiit.lk]
+Contact: [yoonusajward27@gmail.com]
